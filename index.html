@@ -381,10 +381,10 @@
                 <span class="version-pill">v3.0.2</span>
             </div>
             <div class="nav-links">
-                <a href="#">GitHub</a>
+                <a href="https://github.com/FoxStrapOffical/FoxStrapV1.Beta" target="_blank">GitHub</a>
                 <a href="https://discord.gg/qSfH7Y59tp" target="_blank">Discord</a>
                 <a href="#">About Us</a>
-                <a href="#" class="btn-primary">Download</a>
+                <a href="https://github.com/FoxStrapOffical/FoxStrapV1.Beta/releases/download/v3.0.2/FoxStrap.zip" class="btn-primary">Download</a>
             </div>
         </nav>
 
@@ -403,11 +403,11 @@
                 </p>
 
                 <ul class="links-list">
-                    <li>Found any bugs? <a href="#">Submit an issue &rarr;</a></li>
+                    <li>Found any bugs? <a href="https://github.com/FoxStrapOffical/FoxStrapV1.Beta/issues" target="_blank">Submit an issue &rarr;</a></li>
                     <li>Want some mods? <a href="https://discord.gg/qSfH7Y59tp" target="_blank">Join our server &rarr;</a></li>
                 </ul>
 
-                <button class="download-btn-large">
+                <button class="download-btn-large" onclick="window.location.href='https://github.com/FoxStrapOffical/FoxStrapV1.Beta/releases/download/v3.0.2/FoxStrap.zip';">
                     Download 
                     <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 </button>
@@ -420,8 +420,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="stats-links">Downloads: ? Stars: ?</a>
-                <a href="#" class="github-link-bottom">View the repository on <span>Github &rarr;</span></a>
+                <a href="https://github.com/FoxStrapOffical/FoxStrapV1.Beta" target="_blank" class="github-link-bottom">View the repository on <span>Github &rarr;</span></a>
             </div>
 
             <div class="hero-right">
@@ -436,13 +435,13 @@
     <script>
         // --- JAVASCRIPT FOR VERTICAL RAIN EFFECT ---
         const rainContainer = document.getElementById('rain-container');
-        const dropCount = 90; // Slightly more drops to fill the screen evenly
+        const dropCount = 90; 
 
         for(let i = 0; i < dropCount; i++) {
             let drop = document.createElement('div');
             drop.classList.add('drop');
-            drop.style.left = Math.random() * 100 + 'vw'; // Spread evenly across screen width
-            drop.style.animationDuration = Math.random() * 0.6 + 0.4 + 's'; // Slightly faster fall
+            drop.style.left = Math.random() * 100 + 'vw'; 
+            drop.style.animationDuration = Math.random() * 0.6 + 0.4 + 's'; 
             drop.style.animationDelay = Math.random() * 2 + 's';
             rainContainer.appendChild(drop);
         }
